@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jQuery</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="add_product_form">
+        <label for="product_id">
+          <span>Id</span>
+          <input
+            type="text"
+            name="product_id"
+            id="product_id"
+            value=""
+            required
+          />
+        </label>
+        <label for="product_name">
+          <span> Name</span>
+          <input
+            type="text"
+            name="product_name"
+            id="product_name"
+            value=""
+            required
+          />
+        </label>
+        <label for="product_price">
+          <span>Price</span>
+          <input
+            type="text"
+            name="product_price"
+            id="product_price"
+            value=""
+            required
+          />
+        </label>
+        <label for="product_quantity">
+          <span>Quantity</span>
+          <input
+            type="text"
+            name="product_quantity"
+            id="product_quantity"
+            value=""
+            required
+          />
+        </label>
+        <p class="submit">
+          <input
+            type="button"
+            name="add_product"
+            id="add_product"
+            value="Add Product"
+            class="button"
+          />
+        </p>
+      </div>
+      <div class="dropdown1">
+        <select id="select1">
+          <option value="id" id="id1">Id</option>
+          <option value="name" name="name1">Name</option>
+          <option value="price" id="price1">Price</option>
+          <option value="quantity" id="quantity1">Quantity</option>
+        </select>
+      </div>
+      <div class="search">
+        <input type="search" id="query" name="q" placeholder="Search..." />
+        <button onclick="search()">Search</button>
+      </div>
+
+      <div class="output" id="display"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
